@@ -1,1 +1,47 @@
-Hello World
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Amaral Reparações</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme 
+        {
+            --font-raleway: "Raleway", sans-serif; 
+            --font-inter: "Inter", sans-serif; 
+        }
+    </style>
+    <link rel="icon" href="images/favicon.png" />
+  </head>
+
+  <body class="overflow-hidden">
+
+    <div class="h-screen flex  flex-col justify-normal sm:justify-between bg-cover bg-[url(/images/bg.png)] bg-white text-blue-950">
+        
+        <div id="b" class="w-full flex-wrap space-y-4 sm:flex-nowrap flex items-center py-2 sm:py-4 px-6 sm:px-24 justify-between">
+            <span class=""><img src="images/logo.png"></span>
+            <span class="flex flex-row space-x-2">
+                <img src="images/whatsapp.png">
+                <a href="https://wa.me/351931050659?text=Ol%C3%A1%2C%20podes%20me%20ajudar%3F"<span class="font-inter font-bold text-lg sm:text-xl underline">+351 931 050 659</span></a>
+            </span>
+        </div>
+
+        <div id="a" class="w-full flex justify-around font-raleway">
+            <div id="menu" class="flex mx-4 sm:mx-0 flex-col w-lg mt-2 sm:mt-42 ">
+                <span class="text-5xl sm:text-7xl text-center font-bold uppercase">Reparos</span>
+                <span class="text-3xl sm:text-5xl text-center uppercase font-extralight">FRIGORÍFICO E AR CONDICIONADO</span>
+                <span class="text-lg sm:text-xl text-center font-extralight">Nosso site está em construção, mas nossos reparos seguem a todo o vapor em Lisboa e Setúbal.</span>
+            </div>
+            <div class="hidden sm:block">
+                <img src="images/person.png">
+            </div>
+        </div>
+
+    </div>
+
+  </body>
+</html>
