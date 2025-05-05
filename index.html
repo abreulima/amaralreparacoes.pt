@@ -1,56 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Amaral Reparações</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-        @theme
-        {
-            --font-raleway: "Raleway", sans-serif;
-            --font-inter: "Inter", sans-serif;
-        }
-    </style>
-    <link rel="icon" href="images/favicon.png" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Reparações de frigoríficos e ar condicionado em Lisboa e Setúbal. Diagnóstico gratuito, preços justos e profissionais certificados.">
+  <title>Amaral Reparações</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Raleway:wght@200;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    :root {
+      --font-raleway: 'Raleway', sans-serif;
+      --font-inter: 'Inter', sans-serif;
+    }
+    .font-raleway { font-family: var(--font-raleway); }
+    .font-inter { font-family: var(--font-inter); }
+  </style>
+</head>
 
-  <body class="overflow-hidden">
+<body class="font-inter bg-white text-base leading-relaxed sm:px-0">
 
-    <div class="h-screen flex  flex-col justify-normal sm:justify-between bg-cover bg-[url(/images/bg.png)] bg-white text-blue-950">
-
-        <div id="b" class="w-full flex-wrap space-y-4 sm:flex-nowrap flex items-center py-2 sm:py-4 px-6 sm:px-24 justify-between">
-            <span class=""><img src="images/logo.png"></span>
-            <span class="flex flex-row space-x-2">
-                <img src="images/whatsapp.png">
-                <a href="https://wa.me/351931050659?text=Ol%C3%A1%2C%20podes%20me%20ajudar%3F"<span class="font-inter font-bold text-lg sm:text-xl underline">+351 931 050 659</span></a>
-            </span>
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-50 text-white py-3 bg-blue-950 shadow-xl/30">
+    <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+      <div class="flex space-x-24 items-center">
+        <span class="text-center font-bold">AMARAL<br>REPARACÕES</span>
+        <div class="flex items-center space-x-4">
+          <a href="#sobre" class="hover:underline cursor-pointer">Sobre nós</a>
+          <a href="#faq" class="hover:underline cursor-pointer">FAQ</a>
         </div>
-
-        <div id="a" class="w-full flex justify-around font-raleway">
-            <div id="menu" class="flex mx-4 sm:mx-0 flex-col w-lg mt-2 sm:mt-42 ">
-                <span class="text-5xl sm:text-7xl text-center font-bold uppercase">Reparos</span>
-                <span class="text-3xl sm:text-5xl text-center uppercase font-extralight">FRIGORÍFICO E AR CONDICIONADO</span>
-                <span class="text-lg sm:text-xl text-center font-extralight">Nosso site está em construção, mas nossos reparos seguem a todo o vapor em Lisboa e Setúbal.</span>
-                <div class="flex justify-center space-x-4 mt-8">
-                    <a href="https://wa.me/351931050659?text=Ol%C3%A1%2C%20podes%20me%20ajudar%3F">
-                        <button class="w-44 bg-blue-950 p-2 rounded-lg font-bold text-white hover:bg-white hover:text-blue-950 hover:border hover:border-blue-950">931 050 659</button>
-                    </a>
-                    <a href="mailto:contacto@gmail.com">
-                        <button class="w-44 bg-blue-950 p-2 rounded-lg font-bold text-white hover:bg-white hover:text-blue-950 hover:border hover:border-blue-950">contacto@gmail.com</button>
-                    </a>
-                </div>
-
-            </div>
-            <div class="hidden sm:block">
-                <img src="images/person.png">
-            </div>
+      </div>
+      <div>
+        <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 space-x-0 sm:space-x-4">
+          <a class="underline font-semibold" href="https://wa.me/351931050659?text=Olá,%20podes%20me%20ajudar?">+351 931 050 659</a>
+          <a href="https://wa.me/351931050659?text=Olá,%20podes%20me%20ajudar?" class="flex flex-row space-x-2 px-4 items-center bg-green-600 hover:bg-green-700 text-white p-2 rounded-full transition">
+            <img src="img/whatsapp.svg" alt="WhatsApp logo" class="w-5 h-5">
+            <span>Saiba o preço</span>
+          </a>
         </div>
+      </div>
+    </div>
+  </nav>
 
+  <!-- HEADER -->
+  <header class="bg-[url(/img/header.png)] bg-contain bg-right bg-no-repeat bg-[#f3f4f6]">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="flex flex-col justify-between py-8 max-w-lg space-y-8">
+        <h1 class="font-raleway text-3xl sm:text-4xl text-blue-950 font-semibold text-center sm:text-left">
+          REPAROS DE FRIGORÍFICO E AR CONDICIONADO EM LISBOA E SETÚBAL
+        </h1>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start text-blue-950">
+          <div class="flex flex-col items-center space-y-2 font-raleway font-semibold p-2 shadow rounded-lg w-full sm:w-32 bg-white">
+            <img class="w-12 h-12" src="img/icon-1.svg" alt="Diagnóstico gratuito">
+            <span class="text-center">Diagnóstico gratuito</span>
+          </div>
+          <div class="flex flex-col items-center space-y-2 font-raleway font-semibold p-2 shadow rounded-lg w-full sm:w-32 bg-white">
+            <img class="w-12 h-12" src="img/icon-2.svg" alt="Atendimento rápido">
+            <span class="text-center">Atendimento rápido</span>
+          </div>
+          <div class="flex flex-col items-center space-y-2 font-raleway font-semibold p-2 shadow rounded-lg w-full sm:w-32 bg-white">
+            <img class="w-12 h-12" src="img/icon-3.svg" alt="Peças originais">
+            <span class="text-center">Peças originais</span>
+          </div>
+        </div>
+        <div class="flex justify-center sm:justify-start">
+          <a href="https://wa.me/351931050659?text=Olá,%20podes%20me%20ajudar?" class="bg-blue-950 text-white w-full sm:w-52 text-center rounded-lg py-2 hover:bg-blue-900 transition">
+            CONTACTE-NOS
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- QUOTE -->
+    <section class="max-w-5xl mx-auto px-4">
+      <div class="text-center pt-12 pb-24">
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 text-2xl sm:text-4xl font-inter font-light">
+          <img class="w-6 h-6 sm:w-8 sm:h-8" src="img/start-quote.svg" alt="início aspas">
+          <span class="leading-snug">
+            FRIO SOB <span class="text-gray-400">CONTROLO</span>,<br class="sm:hidden" />
+            CONFORTO <span class="text-gray-400">SEMPRE!</span>
+          </span>
+          <img class="w-6 h-6 sm:w-8 sm:h-8" src="img/end-quote.svg" alt="fim aspas">
+        </div>
+      </div>
+    </section>
+
+    <!-- ADVANTAGES -->
+    <section class="max-w-5xl mx-auto bg-gray-100 rounded-sm py-8 my-8 px-4">
+      <h2 class="font-inter font-medium text-2xl text-center mb-12">NOSSAS VANTAGENS</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="space-y-4">
+          <div class="flex space-x-4 items-start">
+            <img class="w-10 h-10" src="img/icon-4.svg" alt="Rapidez">
+            <span>Saída rápida em toda Lisboa e Setúbal</span>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="flex space-x-4 items-start">
+            <img class="w-10 h-10" src="img/icon-5.svg" alt="Diagnóstico gratuito">
+            <span>Diagnóstico gratuito durante a reparação</span>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="flex space-x-4 items-start">
+            <img class="w-10 h-10" src="img/icon-6.svg" alt="Fiabilidade">
+            <span>Peças de boa fiabilidade</span>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="flex space-x-4 items-start">
+            <img class="w-10 h-10" src="img/icon-7.svg" alt="Preços justos">
+            <span>Preços justos sem sobretaxas ocultas</span>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="flex space-x-4 items-start">
+            <img class="w-10 h-10" src="img/icon-8.svg" alt="Profissionais certificados">
+            <span>Profissionais certificados e experientes</span>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="flex space-x-4 items-start">
+            <img class="w-10 h-10" src="img/icon-9.svg" alt="Disponibilidade">
+            <span>Trabalhamos 7 dias por semana</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="sobre" class="bg-[url(/img/nav.png)] bg-cover bg-red-300 text-center">
+      <div class="h-32 flex justify-center items-center max-w-5xl mx-auto">
+        <h2 class="text-2xl sm:text-3xl text-white">SOBRE NÓS</h2>
+      </div>
+    </section>
+    <section class="font-raleway py-8 px-4 flex flex-col sm:flex-row sm:space-x-12 space-y-6 sm:space-y-0 max-w-5xl mx-auto">
+      <p class="font-semibold text-left sm:w-1/2">
+        Somos uma equipa especializada em reparações de frigoríficos e sistemas de ar condicionado com anos de experiência no setor. Atendemos em toda a região de Lisboa e Setúbal, com um compromisso firme com a qualidade e a satisfação do cliente.
+      </p>
+      <p class="font-semibold text-left sm:text-right sm:w-1/2">
+        Garantimos diagnósticos rápidos e gratuitos durante a visita, utilizamos peças originais e oferecemos garantia até 12 meses. A nossa missão é devolver o conforto à sua casa com profissionalismo e transparência.
+      </p>
+    </section>
+    <div class="flex justify-center mx-auto py-8 px-4">
+      <a href="https://wa.me/351931050659?text=Olá,%20podes%20me%20ajudar?" class="font-raleway font-semibold border-2 border-blue-950 rounded-full py-2 px-10 transition hover:bg-blue-950 hover:text-white">
+        ENCOMENDAR
+      </a>
     </div>
 
-  </body>
+    <!-- WORK -->
+    <section id="faq" class="max-w-5xl mx-auto bg-gray-100 rounded-sm py-8 px-4">
+      <h2 class="font-inter font-medium text-2xl text-center mb-12">COMO TRABALHAMOS?</h2>
+      <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-6 sm:space-y-0 items-center justify-center text-center">
+        <div class="flex flex-col items-center">
+          <div>Faça um pedido ou ligue</div>
+          <img class="size-10 mt-2 sm:hidden" src="img/arrow.svg" alt="Seta">
+        </div>
+        <img class="hidden sm:block size-12" src="img/arrow.svg" alt="Seta">
+        <div class="flex flex-col items-center">
+          <div>O mestre vem e faz o diagnóstico</div>
+          <img class="size-10 mt-2 sm:hidden" src="img/arrow.svg" alt="Seta">
+        </div>
+        <img class="hidden sm:block size-12" src="img/arrow.svg" alt="Seta">
+        <div class="flex flex-col items-center">
+          <div>Nós concordamos o custo</div>
+          <img class="size-10 mt-2 sm:hidden" src="img/arrow.svg" alt="Seta">
+        </div>
+        <img class="hidden sm:block size-12" src="img/arrow.svg" alt="Seta">
+        <div class="flex flex-col items-center">
+          <div>Reparação rápida</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="mt-8 bg-blue-950 text-white py-8">
+    <div class="max-w-5xl mx-auto text-center">
+      <p>© 2025 Amaral Reparações. Todos os direitos reservados.</p>
+      <p class="mt-2">Lisboa & Setúbal | <a href="mailto:contacto@amaral.pt" class="underline">amaralreparacoes321@gmail.pt</a></p>
+    </div>
+  </footer>
+
+</body>
+
 </html>
